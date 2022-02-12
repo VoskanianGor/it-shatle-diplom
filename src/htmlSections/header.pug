@@ -1,0 +1,9 @@
+
+header.header 
+    h3.header__logo RELAP
+    //- -let menu = ["home", "feathures", "works", "about","people","news"]
+    ul.header__nav 
+        each link in menu
+            li.header__nav__link
+                a.link(href=link+".html")=link
+    button Contact Us 

@@ -45,7 +45,7 @@ function css() {
                 grid: "autoplace",
             })
         )
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe(dest("build/assets/styles"))
         .pipe(browserSync.stream());
 }

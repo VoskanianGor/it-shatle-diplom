@@ -1,0 +1,28 @@
+.header{
+    @extend .row;
+    background-color: red;
+    &__logo{
+        font-family: $main-ff;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.8rem;  
+        color: $white-c;
+    }
+    &__nav{
+        @extend .row;
+        &__link{
+            margin-right: 30px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            .link{
+                font-family: $sec-ff;
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $white-c;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
