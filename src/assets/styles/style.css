@@ -1,0 +1,88 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro";
+  font-weight: 400;
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro";
+  font-weight: 600;
+  src: url(../fonts/SourceSansPro-SemiBold.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro";
+  font-weight: 700;
+  src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+.row, .header__nav, .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  border: 1px solid rgba(255, 255, 255, 0.295063);
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+
+.header {
+  background-color: red;
+}
+.header__logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #FFFFFF;
+}
+.header__logo:hover {
+  color: #C86DD7;
+}
+.header__nav__link {
+  margin-right: 30px;
+}
+.header__nav__link:last-child {
+  margin-right: 0;
+}
+.header__nav__link .link {
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
+.header__nav__link .link:hover {
+  color: #C86DD7;
+}/*# sourceMappingURL=style.css.map */

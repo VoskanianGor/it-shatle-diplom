@@ -1,17 +1,21 @@
 .header{
     @extend .row;
     background-color: red;
+    padding: 3rem 0;
     &__logo{
         font-family: $main-ff;
         font-weight: 700;
         font-size: 4rem;
         line-height: 4.8rem;  
         color: $white-c;
+        &:hover{
+            color: $violet-c;
+        }
     }
     &__nav{
         @extend .row;
         &__link{
-            margin-right: 30px;
+            margin-right: 3rem;
                 &:last-child{
                     margin-right: 0;
                 }
@@ -21,7 +25,9 @@
                 font-size: 1.6rem;
                 line-height: 2.4rem;
                 color: $white-c;
-                text-transform: capitalize;
+                &:hover{
+                    color: $violet-c;
+                }
             }
         }
     }
