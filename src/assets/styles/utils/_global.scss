@@ -12,9 +12,17 @@
     align-items: center;
 }
 
-.container{
-    max-width: 1190px;
+.container-r{
+    max-width: $max-width;
     width: 100%;
     padding: 0 10px;
-    margin: 0 auto
+    margin: 0 auto;
+    @extend .row;
+}
+.container-c{
+    max-width: $max-width;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    @extend .column;
 }

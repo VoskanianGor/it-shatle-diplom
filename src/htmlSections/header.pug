@@ -1,8 +1,7 @@
-include ../mixins/mixin
-
 header.header 
-    h3.header__logo RELAP
-    ul.header__nav 
-        each link in menu
-            +ul(link)
-    +button("Contact Us")
+    .container-r
+        h3.header__logo RELAP
+        ul.header__nav 
+            each link in menu
+                +ul(link)
+        +button("Contact Us")

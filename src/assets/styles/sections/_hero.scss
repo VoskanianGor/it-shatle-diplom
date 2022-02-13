@@ -1,0 +1,21 @@
+.hero{
+    @extend .row;
+    background: $main-gradient;
+    &__title{
+        font-family: $main-ff;
+        color: $white-c;
+        font-weight: 700;
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+        @include max-width(37rem);
+    }
+    &__prg{
+        font-family: $sec-ff;
+        color: $white-c;   
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 26px 0 34px 0;
+        @include max-width(37rem);
+    }
+}
