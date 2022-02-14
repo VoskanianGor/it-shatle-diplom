@@ -13,13 +13,18 @@
 }
 
 .container-r{
+    position: relative;
     max-width: $max-width;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
     margin: 0 auto;
     @extend .row;
+    @media screen and (max-width: $_480){
+        flex-direction: column;
+    }
 }
 .container-c{
+    position: relative;
     max-width: $max-width;
     width: 100%;
     padding: 0 10px;
