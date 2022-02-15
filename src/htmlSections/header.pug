@@ -1,0 +1,9 @@
+header.header 
+    .container-r
+        h3.header__logo RELAP
+        ul.header__nav 
+            each link in menu
+                +ul(link)
+        +button("Contact Us")
+.header-mobile 
+    h3.header__logo RELAP

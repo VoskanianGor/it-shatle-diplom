@@ -29,5 +29,8 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }

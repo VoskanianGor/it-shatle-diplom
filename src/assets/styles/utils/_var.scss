@@ -1,0 +1,24 @@
+// fonts
+$main-ff: 'Poppins', sans-serif;
+$sec-ff: 'SourceSansPro', sans-serif;
+
+// colors
+$white-c: #FFFFFF;
+$black-c: #333333;
+$violet-c: #C86DD7;
+$yellow-c: #FFC300;
+$main-gradient: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+
+// shadows
+$oval-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+$box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+
+// resolution
+$max-width: 1180px;
+
+// z index
+$z-index-header: 30;
+
+// breakpoints
+$tablet: 760px;
+$mobile: 480px;
