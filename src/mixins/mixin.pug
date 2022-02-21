@@ -2,6 +2,10 @@ mixin ul(link)
     li.header__nav__link
         a.link(href=link+".html")=link
 
+mixin hiddenUl(link)
+    li.header__nav__link-mobile
+        a.link(href=link+".html")=link
+
 mixin button(btnTitle, btnClass='')
     button(class="button " + "button-"+btnClass)=btnTitle
 
