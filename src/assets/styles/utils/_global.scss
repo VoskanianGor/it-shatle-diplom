@@ -19,7 +19,7 @@
     padding: 0 15px;
     margin: 0 auto;
     @extend .row;
-    @media screen and (max-width: $_480){
+    @media screen and (max-width: $mobile){
         flex-direction: column;
     }
 }

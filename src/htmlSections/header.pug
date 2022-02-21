@@ -7,3 +7,9 @@ header.header
         +button("Contact Us")
 .header-mobile 
     h3.header__logo RELAP
+    .menu
+        .menu__burger
+    .hidden-menu
+        ul.header__nav-mobile
+            each link in menu
+                +hiddenUl(link)

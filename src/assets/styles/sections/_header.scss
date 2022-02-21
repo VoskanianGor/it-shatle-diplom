@@ -1,3 +1,5 @@
+@import '../components/burger.scss';
+
 .header{
     @extend .row;
     padding: 3rem 0;
@@ -24,6 +26,9 @@
     }
     &__nav{
         @extend .row;
+        &-mobile{
+            @extend .column;
+        }
         &__link{
             margin-right: 3rem;
                 &:last-child{
@@ -39,6 +44,22 @@
                 &:hover{
                     color: $violet-c;
                 }
+                
+            }
+            &-mobile{
+                font-family: $sec-ff;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 6rem;
+                text-transform: capitalize;
+                
+                .link{
+                    color: $white-c;
+
+                    &:hover{
+                        color: $violet-c;
+                    }
+                }
             }
         }
     }
@@ -47,8 +68,9 @@
         padding: 1.6rem 1.5rem;
         @extend .row;
         @media screen and (max-width: $tablet){
-            display: block;
+            display: flex;
         }
+        
     }
     @media screen and (max-width: $tablet){
         display: none;

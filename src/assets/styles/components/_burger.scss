@@ -1,0 +1,65 @@
+.hidden-menu{
+    @extend .column;
+    justify-content:center;
+    @include pos-t-r(absolute);
+    background: $yellow-c;
+    width: 100vw;
+    height: 100vh;
+    z-index: $z-index-hidden-menu;
+    transform: translateX(-750px);
+}
+.hidden-menu.open{
+    
+    @include pos-t-r(absolute);
+    background: $yellow-c;
+    width: 100vw;
+    height: 100vh;
+    z-index: $z-index-hidden-menu;
+    transform: translateX(0)
+}
+.menu{
+    z-index: $z-index-menu;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    &.open .menu__burger{
+        transform: translateX(-50px);
+        background: transparent;
+        &::before{
+            transform: rotate(45deg) translate(35px, -35px);
+        }
+        &::after{
+            transform: rotate(-45deg) translate(35px, 35px);
+        }
+    }
+    &__burger{
+        width: 100%;
+        height: 3px;
+        background: $violet-c;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: $violet-c;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: $violet-c;
+        }
+        &::before{
+            transform: translateY(6px);
+        }
+        &::after{
+            transform: translateY(-6px);
+        }
+    }
+}
