@@ -1,0 +1,20 @@
+.video{
+
+    &-player{
+        position: relative;
+        @include max-width(70.5rem);
+
+        &__video{
+            @include max-width(70.5rem);
+            @include pos-t-r(absolute);
+        }
+        &__play{
+            @include max-width(11.6rem);
+            transform: translate(-40%, 200%);
+            cursor: pointer;
+            &:hover{
+                transform:translate(-40%, 200%) scale(1.1);
+            }
+        }
+    }
+}

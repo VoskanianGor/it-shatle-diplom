@@ -9,3 +9,7 @@ mixin hiddenUl(link)
 mixin button(btnTitle, btnClass='')
     button(class="button " + "button-"+btnClass)=btnTitle
 
+
+mixin accordItems(title, descr)
+    h5.accord__title=title
+    p.accord__text=descr

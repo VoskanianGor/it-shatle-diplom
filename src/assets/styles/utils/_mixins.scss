@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+@mixin max-height($max){
+    max-width:$max;
+    width: 100%;
+}
+
 @mixin pos-t-r($pos, $top:0, $right:0) {
     position: $pos;
     top: $top;

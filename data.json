@@ -6,5 +6,23 @@
         "about",
         "people",
         "news"
-    ]
+    ],
+    "accord": {
+        "title": "Corporis suscipit laboriosam",
+        "subtitle": "Quis autem",
+        "accordItems": [
+            {
+                "title": "Totam rem aperiam",
+                "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+            },
+            {
+                "title": "Eaque ipsa quae",
+                "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+            },
+            {
+                "title": "Inventore veritatis",
+                "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+            }
+        ]
+    }
 }
