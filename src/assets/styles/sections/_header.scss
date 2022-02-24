@@ -26,6 +26,8 @@
     }
     &__nav{
         @extend .row;
+        margin-left: 54px;
+        margin-top: 7px;
         &-mobile{
             @extend .column;
         }
