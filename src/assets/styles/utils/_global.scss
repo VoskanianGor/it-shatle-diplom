@@ -1,3 +1,5 @@
+@import '../utils/mixins';
+
 .row{
     display: flex;
     flex-direction: row;
@@ -31,3 +33,45 @@
     margin: 0 auto;
     @extend .column;
 }
+
+
+.title{
+    font-family: $main-ff;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    color: $black-c;
+}
+
+.subtitle{
+    font-family: $main-ff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: $black-c;
+
+    margin-bottom: 1.8rem;
+}
+
+.small-title{
+    font-family: $sec-ff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $black-c;
+}
+
+.description{
+    font-family: $sec-ff;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $black-c;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+// input{
+//     display: none;
+// }

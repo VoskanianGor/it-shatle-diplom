@@ -1,20 +1,95 @@
 .video{
+    padding-top: 14rem;
+    .title-video{
+        @include max-width(49.8rem);
+        margin-bottom: 4.4rem;
+    }
+    .accord{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
 
-    &-player{
-        position: relative;
-        @include max-width(70.5rem);
-
-        &__video{
-            @include max-width(70.5rem);
-            @include pos-t-r(absolute);
-        }
-        &__play{
-            @include max-width(11.6rem);
-            transform: translate(-40%, 200%);
+        .small-title-accord{
+            position: relative;
+            @include max-width(16rem);
+            overflow: hidden;
+            margin: 1.1rem 0;
+            transition: all 0.5s ease;
             cursor: pointer;
-            &:hover{
-                transform:translate(-40%, 200%) scale(1.1);
+            &::before {
+                z-index: -1;
+                position: absolute;
+                left: 100%;
+                top: 14px;
+                content: " ";
+                width: 160px;
+                height: 8px;
+                background-color: $violet-c;
+                transition: all 0.5s ease;
+            }
+            &::after {
+                position: absolute;
+                top: 7px;
+                margin-left: 10px;
+                content: " ";
+                width: 6px;
+                height: 6px;
+                border-left: 2px solid $black-c;
+                border-bottom: 2px solid $black-c;
+                transform: rotate(-45deg);
+                transition: all 0.5s ease;
+            }
+        }
+    
+        .description-accord{
+            position: relative;
+            @include max-width(47rem);
+            margin-bottom: 0;
+            right: 100%;
+            height: 0;
+            
+            &:last-child{
+                margin-bottom: 0;
             }
         }
     }
+    
+    &-player{
+        position: absolute;
+        top: -45px; left: 615px;
+    }
 }
+
+
+
+.small-title.small-title-accord.accord-is-open{
+    &::before {
+        z-index: -1;
+        position: absolute;
+        left: 0%;
+        top: 14px;
+        content: " ";
+        width: 160px;
+        height: 8px;
+        background-color: $violet-c;
+    }
+    &::after {
+        position: absolute;
+        top: 7px;
+        margin-left: 10px;
+        content: " ";
+        width: 6px;
+        height: 6px;
+        border-left: 2px solid $black-c;
+        border-bottom: 2px solid $black-c;
+        transform: rotate(135deg)
+    }
+}
+
+.description.description-accord.accord-is-open{
+    margin-bottom: 2.6rem;
+    right: 0%;
+    height: 100%;
+}
+
