@@ -14,16 +14,12 @@
     align-items: center;
 }
 
-.container-r{
+.container{
     position: relative;
     max-width: $max-width;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    @extend .row;
-    @media screen and (max-width: $mobile){
-        flex-direction: column;
-    }
 }
 .container-c{
     position: relative;

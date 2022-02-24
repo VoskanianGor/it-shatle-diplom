@@ -2,6 +2,7 @@
     @extend .row;
     background: $main-gradient;
     
+    
 
     &__content{
         margin-top: 22.8rem;
@@ -64,6 +65,10 @@
             right: 35%;
             top:60%;
         }
+    }
+
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
     }
 
 }

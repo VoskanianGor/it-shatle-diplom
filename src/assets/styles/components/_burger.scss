@@ -1,32 +1,16 @@
-.hidden-menu{
-    @extend .column;
-    justify-content:center;
-    @include pos-t-r(absolute);
-    padding: 30px 0;
-    background: $yellow-c;
-    width: 100vw;
-    height: 100vh;
-    z-index: $z-index-hidden-menu;
-    transform: translateX(-750px);
-}
-.hidden-menu.open{
-    
-    @include pos-t-r(absolute);
-    background: $yellow-c;
-    width: 100vw;
-    height: 100vh;
-    z-index: $z-index-hidden-menu;
-    transform: translateX(0)
-}
 .menu{
     z-index: $z-index-menu;
     position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 20px;
     height: 15px;
     cursor: pointer;
+    
+    @media screen and (max-width: $tablet){
+        display: flex;
+    }
     &.open .menu__burger{
         transform: translateX(-50px);
         background: transparent;
@@ -64,3 +48,4 @@
         }
     }
 }
+
