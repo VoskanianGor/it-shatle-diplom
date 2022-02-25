@@ -2,7 +2,7 @@ const menu = document.querySelector('.menu');
 const hiddenMenu = document.querySelector('.nav')
 
 
-const accordTitle = document.querySelectorAll('.small-title-accord')
+const accordTitle = document.querySelectorAll('.uptitle-accord')
 const accordText = document.querySelectorAll('.description-accord')
 
 menu.addEventListener('click', () => {

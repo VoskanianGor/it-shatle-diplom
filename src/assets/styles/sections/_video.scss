@@ -1,5 +1,6 @@
 .video{
     padding-top: 14rem;
+
     .title-video{
         @include max-width(49.8rem);
         margin-bottom: 4.4rem;
@@ -10,7 +11,7 @@
         flex-direction: column;
         transition: all 0.5s ease;
 
-        .small-title-accord{
+        .uptitle-accord{
             position: relative;
             @include max-width(16rem);
             overflow: hidden;
@@ -63,7 +64,7 @@
 
 
 
-.small-title.small-title-accord.accord-is-open{
+.uptitle.uptitle-accord.accord-is-open{
     &::before {
         z-index: -1;
         position: absolute;
