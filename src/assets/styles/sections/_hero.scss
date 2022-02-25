@@ -1,20 +1,26 @@
 .hero .container{
     @extend .row;
-    overflow: hidden;
-    
+
     @media screen and (max-width: $mobile){
+        flex-direction: column;
+    }
+    @media screen and (max-width: $tablet){
         flex-direction: column;
     }
 }
 
 .hero {
     background: $main-gradient;
-
+    overflow: hidden;
     &__content{
         margin-top: 22.8rem;
         margin-bottom: 19rem;
         @media screen and (max-width: $mobile){
-            margin-top: 2.3rem;
+            margin-top: 8.7rem;
+            margin-bottom: 1.6rem;
+        }
+        @media screen and (max-width: $tablet){
+            margin-top: 8.7rem;
             margin-bottom: 1.6rem;
         }
     }
@@ -41,40 +47,94 @@
     }
     &__img{
         @include pos-t-l(relative, 0, 0);
-        margin-top: 14.2rem; 
-        overflow: hidden; 
-        & img{
-            width: 100%;
-            height: 100%;
-            
-            @media screen and (max-width: $mobile){
-                @include pos-t-l(relative, 0, 20px);
-                
-            }
-        }
+        margin-top: 14.2rem;
+
         @media screen and (max-width: $mobile){
             margin-top: 0;
         }
-    }
-    &__socials{
-        @extend .row;
-        @include max-width(11.2rem);
-        @include pos-t-r(absolute, 87%);
-        
-        .socials-item{
-            &:hover > svg path{
-                fill: $yellow-c;
-            }
-        }
-
-        @media screen and (max-width: $mobile){
-            right: 35%;
-            top:60%;
+        @media screen and (max-width: $tablet){
+            margin-top: 0;
         }
     }
+    &__item{
+        width: 100%;
+        height: 100%;
+    }
+    
 
     @media screen and (max-width: $mobile){
         flex-direction: column;
     }
 
+}
+
+
+.oval{
+    &-tiny-hero{
+        max-width: 78px; width: 100%;
+        max-height: 78px; height: 100%;
+        top: -14%; right: -26%;
+        @media screen and (max-width: $mobile){
+            max-width: 46px; width: 100%;
+            max-height: 46px; height: 100%;
+            top: -19%; right: -13%;
+        }
+    }
+    &-small-hero{
+        max-width: 100px; width: 100%;
+        max-height: 100px; height: 100%;
+        top: 93%; left: -6%;
+        @media screen and (max-width: $mobile){
+            max-width: 59px; width: 100%;
+            max-height: 59px; height: 100%;
+        }
+    }
+    &-medium-hero{
+        max-width: 156px; width: 100%;
+        max-height: 156px; height: 100%;
+        top: 6%; left: 78%;
+
+        @media screen and (max-width: $mobile){
+            max-width: 90px; width: 100%;
+            max-height: 90px; height: 100%;
+            top: 0%; left: 85%;
+        }
+    }
+    &-big-hero{
+        max-width: 396px; width: 100%;
+        max-height: 396px; height: 100%;
+        top: 59%; left: 82%;
+
+        @media screen and (max-width: $mobile){
+            max-width: 232px; width: 100%;
+            max-height: 232px; height: 100%;
+            top: 59%; left: 70%;
+        }
+    }
+}
+
+.socials{
+    @extend .row;
+    @include max-width(11.2rem);
+
+    .socials-item{
+        &:hover > svg path{
+            fill: $yellow-c;
+        }
+    }
+    &-hero{
+        @include pos-t-r(absolute, 87%);
+        @media screen and (max-width: $tablet){
+            right: 42%;
+            top: 80%;
+            transform: scale(1.5);
+        }
+        @media screen and (max-width: $mobile){
+            right: 35%;
+            top: 80%;
+            transform: scale(1);
+        }
+        
+    }
+    
 }

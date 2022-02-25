@@ -1,0 +1,23 @@
+.oval{
+    position: absolute;
+    background: $main-gradient;
+    opacity: 0.5;
+    border-radius: 50%;
+
+    &-tiny{
+        width: 78px;
+        height: 78px;
+    }
+    &-small{
+        width: 100px;
+        height: 100px;
+    }
+    &-medium{
+        width: 156px;
+        height: 156px;
+    }
+    &-big{
+        width: 396px;
+        height: 396px;
+    }
+}

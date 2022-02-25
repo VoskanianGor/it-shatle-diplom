@@ -2,9 +2,6 @@ mixin ul(link)
     li.nav__item
         a.nav__link(href=link+".html")=link
 
-mixin hiddenUl(link)
-    li.header__nav__link-mobile
-        a.link(href=link+".html")=link
 
 mixin button(btnTitle, btnClass='')
     button(class="button " + "button-"+btnClass)=btnTitle
@@ -13,3 +10,8 @@ mixin button(btnTitle, btnClass='')
 mixin accordItems(title, descr)
     h5.small-title(class="small-title-accord")=title
     p.description(class="description-accord")=descr
+
+
+mixin oval(ovalClass)
+    div.oval(class="oval-"+ovalClass)
+    

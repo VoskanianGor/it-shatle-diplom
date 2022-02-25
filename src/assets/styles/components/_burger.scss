@@ -10,6 +10,8 @@
     
     @media screen and (max-width: $tablet){
         display: flex;
+        position: fixed;
+        right: 15px;
     }
     &.open .menu__burger{
         transform: translateX(-50px);
