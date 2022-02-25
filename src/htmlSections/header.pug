@@ -1,18 +1,9 @@
-header.header.container
-    //- .container
-    h3.logo RELAP
-    ul.nav 
-        each link in menu
-            +ul(link)
-    +button("Contact Us")
-    .menu
-        .menu__burger
-
-    //- .header-mobile 
-    //-     h3.logo RELAP
-    //-     .menu
-    //-         .menu__burger
-    //-     .hidden-menu
-    //-         ul.header__nav-mobile
-    //-             each link in menu
-    //-                 +hiddenUl(link)
+header.header
+    .container
+        h3.logo RELAP
+        ul.nav 
+            each link in menu
+                +ul(link)
+        +button("Contact Us")
+        .menu
+            .menu__burger

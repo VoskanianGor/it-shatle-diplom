@@ -1,8 +1,14 @@
-.hero{
+.hero .container{
     @extend .row;
+    overflow: hidden;
+    
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
+    }
+}
+
+.hero {
     background: $main-gradient;
-    
-    
 
     &__content{
         margin-top: 22.8rem;
