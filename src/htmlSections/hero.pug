@@ -1,5 +1,5 @@
 section.hero
-    .container-r
+    .container
         .hero__content
             h1.hero__title Omnis Voluptas
             p.hero__prg 
@@ -10,8 +10,12 @@ section.hero
                 |et molestiae non recusandae.
             +button("Explore", "yellow")
         .hero__img
-            img(src="./assets/images/svg/illustrationlaptop-on-the-table.svg")
-            .hero__socials
+            img.hero__item(src="./assets/images/laptop.png")
+            +oval( 'tiny-hero')
+            +oval('small-hero')
+            +oval('medium-hero')
+            +oval('big-hero')
+            .socials(class="socials-hero")
                 a.socials-item(href="#" target="_blank")
                     include ../icons/fb
                 a.socials-item(href="#" target="_blank") 
@@ -19,3 +23,4 @@ section.hero
                 a.socials-item(href="#" target="_blank")
                     include ../icons/inst
         
+    

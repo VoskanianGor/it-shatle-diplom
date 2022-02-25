@@ -28,7 +28,7 @@ function html() {
             pug({
                 pretty: true,
                 locals: data || {},
-                
+
             })
         )
         .pipe(dest("build"))
@@ -65,6 +65,13 @@ function fonts() {
         .pipe(browserSync.stream());
 }
 
+// build java's assets script
+function javaS() {
+    return src("src/assets/script/**/*.js")
+        .pipe(dest("build/assets/script"))
+        .pipe(browserSync.stream());
+}
+
 // clear all build
 function clear() {
     return del("build", { force: true });
@@ -76,9 +83,10 @@ function startWatch() {
     watch("src/assets/styles/**/*.scss", css);
     watch("src/assets/images/**/*", images);
     watch("src/assets/fonts/**/*", fonts);
+    watch("src/assets/script/**/*.js", javaS)
 }
 
 // build the browser sync series
-exports.dev = parallel(browsersync, startWatch, html,images, fonts, css);
-exports.build = series(clear, parallel(html, images, fonts, css));
-exports.default = parallel(browsersync, startWatch, html, images, fonts, css);
+exports.dev = parallel(browsersync, startWatch, html, javaS, images, fonts, css);
+exports.build = series(clear, parallel(html, javaS, images, fonts, css));
+exports.default = parallel(browsersync, startWatch, html, javaS,images, fonts, css);

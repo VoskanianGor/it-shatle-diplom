@@ -1,14 +1,40 @@
 @import '../components/burger.scss';
 
-.header{
+.header .container{
     @extend .row;
-    padding: 3rem 0;
+}
+
+.header{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background: none;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 0; right: 0;
     z-index: $z-index-header;
-    &__logo{
+
+    @media screen and (max-width: $tablet){
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+        background: $white-c;
+    }
+
+    .nav{
+        margin-left: 54px;
+        margin-top: 7px;
+
+        @media screen and (max-width: $tablet){
+            position: fixed;
+            top: 0; left: -100%;
+            flex-direction: column;
+            justify-content: space-around;
+            background: $yellow-c;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 1rem 0;
+        }
+    }
+    .logo{
         font-family: $main-ff;
         font-weight: 700;
         font-size: 4rem;
@@ -24,57 +50,44 @@
             line-height: 3.2rem;
         }
     }
-    &__nav{
-        @extend .row;
-        &-mobile{
-            @extend .column;
-        }
-        &__link{
-            margin-right: 3rem;
-                &:last-child{
-                    margin-right: 0;
-                }
-            .link{
-                font-family: $sec-ff;
-                font-weight: 600;
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-                color: $white-c;
-                text-transform: capitalize;
-                &:hover{
-                    color: $violet-c;
-                }
-                
-            }
-            &-mobile{
-                font-family: $sec-ff;
-                font-weight: 600;
-                font-size: 3rem;
-                line-height: 6rem;
-                text-transform: capitalize;
-                
-                .link{
-                    color: $white-c;
+}
 
-                    &:hover{
-                        color: $violet-c;
-                    }
-                }
-            }
-        }
-    }
-    &-mobile{
-        display: none;
-        padding: 1.6rem 1.5rem;
-        @extend .row;
+.nav{
+    @extend .row;
+
+    &__item{
+        margin-right: 3rem;
+
         @media screen and (max-width: $tablet){
-            display: flex;
+            margin: 0;
         }
-        
+        &:last-child{
+            margin-right: 0;
+        }
     }
+
+    &__link{
+        font-family: $sec-ff;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $white-c;
+        text-transform: capitalize;
+        @media screen and (max-width: $tablet){
+            font-size: 4rem;    
+        }
+        &:hover{
+            color: $violet-c;
+        }
+    }
+}
+
+.nav.open{
+    top: 0; left: 0;
+}
+
+.button-{
     @media screen and (max-width: $tablet){
         display: none;
     }
-    
 }
-
