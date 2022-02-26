@@ -1,13 +1,13 @@
 section.video
     .container
-        .video-content
+        .video__content
             h5.subtitle=accord.subtitle
             h2.title(class="title-video")=accord.title
             .accord
                 each item in accord.accordItems
                     +accordItems(item.title, item.description)
-        .video__bg    
+        .video__box    
             img.video__video(src='./assets/images/Bitmapabs-img.png')
         
-            //- .video__play
-            //-     include ../icons/play
+            .video__play
+                include ../icons/play
