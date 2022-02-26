@@ -1,0 +1,69 @@
+@import "../components/gallery-card";
+
+.gallery .container{
+    @extend .column;
+    
+}
+
+.gallery{
+    
+    background: $pink-c;
+    padding: 6.1rem 0 4.8rem 0;
+
+    &__title{
+        @extend .row;
+        align-items: flex-end;
+        @media screen and (max-width: $s-laptop){
+            flex-wrap: wrap;
+        }
+        
+        
+    }
+    &-description{
+        max-width: 57rem;
+        @media screen and (max-width: $s-laptop){
+            margin-top: 2.4rem;
+        }
+    }
+    &__box{
+        @include max-width(1170px);
+    }
+    &__select{
+        @extend .row;
+        flex-wrap: wrap;
+        @include max-width(51.6rem);
+        margin: 5.5rem 0 4.2rem 0;
+        cursor: pointer;
+        .uptitle{
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
+            @media screen and (max-width: $mobile){
+                margin-right: 31px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__cards{
+        @extend .row;
+        overflow: hidden;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $s-laptop){
+            flex-direction: column;
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    & .button-violet{
+        margin-top: 4.8rem;
+
+        @media screen and (max-width: $mobile){
+            margin-top: 3.4rem;
+        }
+    }
+}
+
+

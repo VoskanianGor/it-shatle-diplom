@@ -24,5 +24,32 @@
                 "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
             }
         ]
+    },
+
+    "gallery" : {
+        "titles" : [
+            "Quis Autem",
+            "Reprehenderit",
+            "Voluptate",
+            "Molestiae",
+            "Consequatur"
+        ],
+        "cards": [
+            {
+                "src": "./assets/images/Bitmapwork1.png",
+                "title": "Exercitation",
+                "desc": "Ullamco laboris"
+            },
+            {
+                "src": "./assets/images/Bitmapwork2.png",
+                "title": "Exercitation",
+                "desc": "Ullamco laboris"
+            },
+            {
+                "src": "./assets/images/Bitmapwork3.png",
+                "title": "Exercitation",
+                "desc": "Ullamco laboris"
+            }
+        ]
     }
 }

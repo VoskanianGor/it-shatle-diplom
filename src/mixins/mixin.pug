@@ -15,3 +15,13 @@ mixin accordItems(title, descr)
 mixin oval(ovalClass)
     div.oval(class="oval-"+ovalClass)
     
+
+mixin galleryTitles(item)
+    h5.uptitle(class="uptitle-gallery")=item
+
+mixin galleryCard(src, title, desc)
+    .gallery-card
+        img.gallery-card__img(src=src, alt="abstract image")
+        .gallery-card__info
+            .h4(class="h4-gallery-card")=title
+            .description=desc

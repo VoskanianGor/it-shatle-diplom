@@ -28,6 +28,14 @@
     font-size: 5.6rem;
     line-height: 6.4rem;
     color: $black-c;
+
+    @media screen and (max-width: $mobile){
+        font-size: 4rem;
+        line-height: 4.8rem;
+    }
+
+
+
 }
 
 .subtitle{
@@ -37,7 +45,6 @@
     line-height: 2.4rem;
     text-transform: uppercase;
     color: $black-c;
-
     margin-bottom: 1.8rem;
 }
 
@@ -59,6 +66,10 @@
     opacity: 0.5;
 }
 
-// input{
-//     display: none;
-// }
+.h4{
+    font-family: $main-ff;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #333333;
+}
