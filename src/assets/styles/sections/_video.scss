@@ -1,11 +1,11 @@
 .video .container{
     @extend .row;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $s-laptop){
         flex-direction: column;
     }
 }
 .video{
-    padding-top: 14.4rem;
+    padding-top: 4.6rem;
     position: relative;
 
     .title-video{
@@ -67,10 +67,22 @@
     &__box{
         background: $main-gradient;
         position: relative;
+        left: 8.7%; top: 8.4rem;
+
+        @media screen and (max-width: $s-laptop){
+            left: 0;
+        }
+        // @media screen and (max-width: $tablet){
+        //     transform: scale(0.7);
+        // }
     }
     &__video{
         @include pos-t-l(relative, -32px, 32px);
         width: 100%; height: 100%;
+
+        @media screen and (max-width: $s-laptop){
+            top: -16px; left: 16px;
+        }
 
         &::before{
             content: " ";
@@ -80,8 +92,13 @@
 
     }
     &__play{
-        @include pos-t-l(absolute, 40%, -6%)
-        
+        @include pos-t-l(absolute, 40%, -6%);
+        @media screen and (max-width: $s-laptop){
+            left: 40%;
+        }
+        @media screen and (max-width: $mobile){
+            left: 35%; top: 30%;
+        }
     }
 }
 
