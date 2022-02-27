@@ -51,5 +51,40 @@
                 "desc": "Ullamco laboris"
             }
         ]
+    },
+    "features": {
+        "cards":[
+            {
+                "src": "./assets/images/svg/feat1.svg",
+                "title": "Consequuntur",
+                "desc": "Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+            },
+            {
+                "src": "./assets/images/svg/feat2.svg",
+                "title": "Voluptatem",
+                "desc": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam"
+            },
+            {
+                "src": "./assets/images/svg/feat3.svg",
+                "title": "Quisquam",
+                "desc": "Quis nostrum exercitationem ullam corporis suscipit laboriosam"
+            },
+            {
+                "src": "./assets/images/svg/feat4.svg",
+                "title": "Aliquid",
+                "desc": "Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil"
+            },
+            {
+                "src": "./assets/images/svg/feat5.svg",
+                "title": "Excepteur",
+                "desc": "Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim"
+            },
+            {
+                "src": "./assets/images/svg/feat6.svg",
+                "title": "Accusamus",
+                "desc": "Odio dignissimos ducimus qui blanditiis praesentium voluptatum"
+            }
+            
+        ]
     }
 }
