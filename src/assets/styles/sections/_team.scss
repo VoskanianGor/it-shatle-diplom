@@ -1,0 +1,34 @@
+.team .container{
+    @extend .row;
+    @media screen and (max-width: $tablet){
+        flex-direction: column;
+    }
+}
+
+.team{
+    background: $blue-c;
+    padding-top: 11.3rem;
+
+    &__img {
+        @include pos-t-l(relative, 17px, 37px);
+        width : 100%;
+        height : 100%;
+
+        @media screen and (max-width: $tablet){
+            left: 0;
+        }
+    }
+    &-subtitle{
+        color: $white-c;
+    }
+    &-title{
+        color: $white-c;
+        @include max-width(36rem);
+    }
+    &-description{
+        margin: 23px 0 42px 0;
+        color: $white-c;
+        opacity: 1;
+        @include max-width(47rem);
+    }
+}
