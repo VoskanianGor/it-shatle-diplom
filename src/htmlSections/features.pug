@@ -1,0 +1,8 @@
+section.features
+    .container
+        .features__title
+            .title Fugiat quo
+            .description(class="features-decription") Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        .features__cards
+            each card in features.cards
+                +featuresCard(card.src, card.title, card.desc)

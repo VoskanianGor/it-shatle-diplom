@@ -25,3 +25,9 @@ mixin galleryCard(src, title, desc)
         .gallery-card__info
             .h4(class="h4-gallery-card")=title
             .description=desc
+
+mixin featuresCard(src, title, desc)
+    .features-card
+        img.features-card__img(src=src, alt="features icon")
+        .h4(class="h4-features-card")=title
+        .description=desc

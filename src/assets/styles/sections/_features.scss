@@ -1,0 +1,37 @@
+@import "../components/features-card";
+
+.features .container{
+    @extend .column;
+    
+}
+
+.features{
+    margin: 7.1rem 0 8rem 0;
+    &__title{
+        @extend .column;
+    }
+    &-decription{
+        @include max-width(57rem);
+        opacity: 1;
+        font-weight: 600;
+        text-align: center;
+        margin: 2.3rem 0 3.3rem 0;
+    }
+
+    &__cards{
+        @include max-width(1110px);
+        display: grid;
+        column-gap: 83px;
+        row-gap: 2px;
+        grid-template-areas: 
+        'a b c'
+        'd e f';
+        @media screen and (max-width: $s-laptop){
+            max-width: 900px;
+        }
+        @media screen and (max-width: $tablet){
+            grid-template-areas: 'a';
+            place-items: center;
+        }
+    }
+}
