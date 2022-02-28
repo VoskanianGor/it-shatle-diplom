@@ -72,6 +72,13 @@ function javaS() {
         .pipe(browserSync.stream());
 }
 
+// upload video assets to browser sync
+function video() {
+    return src("src/assets/video/**/*")
+        .pipe(dest("build/assets/video"))
+        .pipe(browserSync.stream());
+}
+
 // clear all build
 function clear() {
     return del("build", { force: true });
@@ -83,10 +90,11 @@ function startWatch() {
     watch("src/assets/styles/**/*.scss", css);
     watch("src/assets/images/**/*", images);
     watch("src/assets/fonts/**/*", fonts);
-    watch("src/assets/script/**/*.js", javaS)
+    watch("src/assets/script/**/*.js", javaS);
+    watch("src/assets/script/**/*", video)
 }
 
 // build the browser sync series
-exports.dev = parallel(browsersync, startWatch, html, javaS, images, fonts, css);
+exports.dev = parallel(browsersync, startWatch, html, javaS, images, fonts, css, video);
 exports.build = series(clear, parallel(html, javaS, images, fonts, css));
-exports.default = parallel(browsersync, startWatch, html, javaS,images, fonts, css);
+exports.default = parallel(browsersync, startWatch, html, javaS,images, fonts, css, video);
