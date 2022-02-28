@@ -1,0 +1,49 @@
+.gallery-card{
+    @include max-width(37rem);
+    position: relative;
+
+    @media screen and (max-width: $s-laptop){
+        margin-bottom: 1.7rem;
+    }
+
+    &__img:hover + &__info{
+        top: 0;
+        @media screen and (max-width: $s-laptop){
+            margin-top: 0rem;
+        }
+    }
+
+    &__info{
+        position: absolute;
+        top: 100%; left: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0  0 2.6rem 3.2rem;
+        height: 246px;
+        width: 338px;
+        background: $black-c;
+        opacity: 0.8;
+
+        @media screen and (max-width: $s-laptop){
+            margin-top: 1.7rem;
+        }
+
+        &:hover{
+            top: 0;
+            opacity: 0.8; 
+            @media screen and (max-width: $s-laptop){
+                margin-top: 0rem;
+            }
+        }
+
+        .h4{
+            color: $white-c;
+        }
+        .description{
+            color: $white-c;
+        }
+    }
+    
+}

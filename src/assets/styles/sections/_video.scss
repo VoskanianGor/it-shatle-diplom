@@ -72,9 +72,6 @@
         @media screen and (max-width: $s-laptop){
             left: 0;
         }
-        // @media screen and (max-width: $tablet){
-        //     transform: scale(0.7);
-        // }
     }
     &__video{
         @include pos-t-l(relative, -32px, 32px);
