@@ -1,5 +1,12 @@
+.video .container{
+    @extend .row;
+    @media screen and (max-width: $s-laptop){
+        flex-direction: column;
+    }
+}
 .video{
-    padding-top: 14rem;
+    padding-top: 4.6rem;
+    position: relative;
 
     .title-video{
         @include max-width(49.8rem);
@@ -56,9 +63,43 @@
         }
     }
     
-    &-player{
+    
+    &__box{
+        background: $main-gradient;
         position: relative;
-        top: -45px; left: 615px;
+        left: 8.7%; top: 8.4rem;
+
+        @media screen and (max-width: $s-laptop){
+            left: 0;
+        }
+    }
+    &__video{
+        @include pos-t-l(relative, -32px, 32px);
+        width: 100%; height: 100%;
+
+        @media screen and (max-width: $s-laptop){
+            top: -16px; left: 16px;
+        }
+
+        &::before{
+            content: " ";
+            background: $main-gradient;
+            width: 100%; height: 100%;
+        }
+
+    }
+    &__play{
+        @include pos-t-l(absolute, 35%, -6%);
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        @media screen and (max-width: $s-laptop){
+            left: 40%;
+        }
+        @media screen and (max-width: $mobile){
+            left: 35%; top: 30%;
+        }
     }
 }
 
