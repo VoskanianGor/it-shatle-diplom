@@ -31,3 +31,12 @@ mixin featuresCard(src, title, desc)
         img.features-card__img(src=src, alt="features icon")
         .h4(class="h4-features-card")=title
         .description=desc
+
+mixin reviewsCard(src, desc, name)
+    .reviews-card 
+        img.reviews-card__img(src=src, alt="reviewer icon")
+        .description(class="reviews-card__decription")=desc
+        .description(class="reviews-decription")=name
+
+mixin reviewsClients(val)
+    img.logo(src=`../assets/images/reviews${val}.png`)
