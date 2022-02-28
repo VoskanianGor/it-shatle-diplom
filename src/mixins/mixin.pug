@@ -36,7 +36,7 @@ mixin reviewsCard(src, desc, name)
     .reviews-card 
         img.reviews-card__img(src=src, alt="reviewer icon")
         .description(class="reviews-card__decription")=desc
-        .description(class="reviews-decription")=name
+        .description(class="reviews-description")=name
 
 mixin reviewsClients(val)
     img.logo(src=`../assets/images/reviews${val}.png`)
