@@ -22,6 +22,25 @@
         flex-wrap: wrap;
         @include max-width(1170px);
         margin: 6.4rem 0 9.6rem 0;
+
+        @media screen and (max-width: $s-laptop){
+            flex-direction: column;
+        }
+    }
+    &__clients{
+        @extend .row;
+        @include max-width(1130px);
+        flex-wrap: wrap;
+        @media screen and (max-width: $s-laptop){
+            max-width: 460px;
+        }
+        @media screen and (max-width: $tablet){
+            max-width: 305px;
+        }
+
+        .logo{
+            margin-bottom: 2rem;
+        }
     }
 
 }
@@ -32,6 +51,10 @@
     align-items: flex-start;
     @include max-width(30.6rem);
     box-shadow: $box-shadow;
+
+    @media screen and (max-width: $s-laptop){
+        margin-bottom: 2rem;
+    }
 
     &:hover{
         transform: scale(1.01)
