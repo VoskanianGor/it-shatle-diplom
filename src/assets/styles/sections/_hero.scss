@@ -1,9 +1,7 @@
 .hero .container{
     @extend .row;
 
-    @media screen and (max-width: $mobile){
-        flex-direction: column;
-    }
+    
     @media screen and (max-width: $tablet){
         flex-direction: column;
     }
